@@ -17,11 +17,11 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
           (isOpen ? " translate-x-0 " : " translate-x-full ")
         }
       >
-        <div className=" flex justify-end">
+        <div className="flex justify-end">
         <button onClick={() => setIsOpen(false)} className="bg-bkg-vivid"><XMarkIcon width={40}/></button>
         </div>
-        <article className="px-10 flex flex-col justify-center space-y-6 overflow-y-scroll h-full">
-          <div className="font-light text-5xl">Send me an email</div>
+        <article className="px-6 flex flex-col justify-center overflow-y-scroll h-full">
+          <div className="font-light text-4xl sm:text-5xl mb-10">Send me an email</div>
           {children}
         </article>
       </section>

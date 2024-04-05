@@ -11,7 +11,6 @@ import {
 import AboutCard from "../../components/AboutCard.jsx";
 import SlideIn from "../../components/utils/SlideIn.jsx";
 import Reveal from "../../components/utils/Reveal.jsx";
-import PageNavLink from "../../components/primitives/PageNavLink.jsx";
 
 const cardOneText =
   "Through initial sketch to the cloud. I talking through design implementations to transform desired functionalities to the code.";
@@ -26,7 +25,7 @@ export default function WhatIDoSection() {
   return (
     <section
       id="WhatIDo"
-      className="bg-bkg-mate min-h-screen flex flex-col px-6 md:px-12 lg:px-24 py-8 justify-between"
+      className="relative bg-bkg-mate min-h-screen flex flex-col px-6 md:px-12 lg:px-24 py-8 justify-between"
     >
       <Reveal>
         <div className="text-start text-4xl mb-10 lg:mb-0 ">WHAT I DO</div>
@@ -57,7 +56,7 @@ export default function WhatIDoSection() {
         />
       </div>
       <SlideIn delay="0.8">
-        <div className="flex gap-4 justify-end mb-12">
+        <div className="flex gap-4 sm:justify-end mb-12">
           <span className="text-2xl font-extralight"></span>
           <JavaIcon alt="Java" />
           <SpringIcon />
@@ -69,9 +68,6 @@ export default function WhatIDoSection() {
           <AwsIcon />
         </div>
       </SlideIn>
-      <a href="#Projects" className="hover:text-accent-3 flex text-lg justify-center">
-        <PageNavLink name="PROJECTS" />
-      </a>
     </section>
   );
 }

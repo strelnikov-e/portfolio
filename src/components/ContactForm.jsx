@@ -84,7 +84,7 @@ export default function ContactForm() {
           type="submit"
           value="Send"
           disabled={isMessageSent || !isError}
-          className={`block rounded-sm py-2.5 w-1/3 xl:w-1/4 text-xl font-normal border-2 border-content-vivid transition-colors duration-500 ${
+          className={`block rounded-sm py-2.5 w-fit xl:w-1/4 text-xl font-normal border-2 border-content-vivid transition-colors duration-500 ${
             isMessageSent
               ? "bg-accent-2 text-bkg-mate hover:bg-content-mate hover:text-bkg-vivid"
               : isError

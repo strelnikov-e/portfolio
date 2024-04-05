@@ -29,20 +29,7 @@ export default function HeroSection() {
             </div>
           </div>
         </Reveal>
-        <SlideIn delay="1.2" margin="0%" duration="0.5">
-          <div className="flex flex-col lg:flex-row gap-4 font-normal md:text-lg justify-between">
-            <a href="mailto:evstrelnikov@gmail.com">
-              <div className="flex">
-                <Email />
-              </div>
-            </a>
-            <a href="#WhatIDo" className="hover:text-accent-3 self-center">
-              <PageNavLink name="SEE MORE"/>
-              {/* SEE MORE <span className="block h-5 w-5" aria-hidden="true"><ArrowDownIcon/></span> */}
-            </a>
-            <div></div>
-          </div>
-        </SlideIn>
+        
       </div>
 
       <div className="col-span-1 sm:self-center self-start justify-self-end py-8 scale-75 sm:scale-100">
@@ -59,6 +46,22 @@ export default function HeroSection() {
           </Reveal>
         </div>
       </div>
+      <div className="col-span-12 self-end">
+      <SlideIn delay="1.2" margin="0%" duration="0.5" >
+          <div className=" relative flex flex-col sm:flex-row gap-4 font-normal md:text-lg justify-between ">
+            <a href="mailto:evstrelnikov@gmail.com">
+              <div className="flex">
+                <Email />
+              </div>
+            </a>
+            <a href="#WhatIDo" className="hover:text-accent-3 hidden md:block absolute left-1/2">
+              <PageNavLink name="SEE MORE"/>
+              {/* SEE MORE <span className="block h-5 w-5" aria-hidden="true"><ArrowDownIcon/></span> */}
+            </a>
+            <div className="">MONTREAL, CA</div>
+          </div>
+        </SlideIn>
+        </div>
     </section>
   );
 }

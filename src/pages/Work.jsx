@@ -6,8 +6,8 @@ const IssueTrackerDescription =
 
 export default function Work() {
   return (
-    <div className="bg-bkg-mate text-content-vivid min-h-screen px-2 sm:px-6 md:px-12 lg:px-24 py-20">
-      <div className="text-6xl xl:w-4/5 font-light  mt-32 mb-24">
+    <div className="bg-bkg-mate text-content-vivid min-h-screen px-6 md:px-12 lg:px-24 py-20">
+      <div className="text-6xl xl:w-4/5 font-light  mt-24 mb-20 md:mt-32 md:mb-24">
         Explore a selection of recent projects I've worked on.
       </div>
       {projectList.map((proj) => (

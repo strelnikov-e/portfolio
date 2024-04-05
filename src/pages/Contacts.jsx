@@ -14,7 +14,7 @@ export default function Contacts() {
         <div></div>
         <Reveal>
           <div>
-            <div className="flex items-center text-xl sm:text-2xl md:text-3xl">
+            <div className="flex items-center text-lg sm:text-2xl md:text-3xl">
               Email below or fill in this
               <button
                 className="underline bg-inherit border-none px-2 py-0"
@@ -23,13 +23,13 @@ export default function Contacts() {
                 short form
               </button>
             </div>
-            <div className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl">
+            <div className="text-3xl sm:text-5xl md:text-6xl xl:text-7xl">
               evstrelnikov@gmail.com
             </div>
           </div>
         </Reveal>
         <SlideIn margin="0%" delay="0.5" duration="0.5">
-        <div className="flex flex-col sm:flex-row text-lg font-medium justify-between">
+        <div className="flex flex-col sm:flex-row text-md sm:text-lg font-medium justify-between">
           <div className="flex gap-2 ">
             <div>LOCAL TIME -</div>
             <div>

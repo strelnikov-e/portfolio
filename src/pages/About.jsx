@@ -11,11 +11,7 @@ export default function About() {
             <div className="text-2xl sm:text-4xl mb-4 font-thin">
               <Reveal delay="0.4" duration="1.5">
                 I'm
-              {/* </Reveal>
-              <Reveal> */}
                 <span className="font-semibold"> web developer </span>
-              {/* </Reveal>
-              <Reveal delay="0.4" duration="1.5"> */}
                 based in snowy Montreal, Canada.
               </Reveal>
             </div>

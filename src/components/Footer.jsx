@@ -2,8 +2,8 @@ import Time from "./utils/Time";
 
 export default function Footer({ setIsOpen }) {
   return (
-    <div className="bg-accent-2 text-accent-1 max-h-full flex flex-col px-3 md:px-12 lg:px-24 py-16 pb-8 justify-evenly gap-8 text-start z-30">
-      <div className=" text-lg sm:text-2xl lg:text-3xl">
+    <div className="bg-accent-2 text-accent-1 max-h-full flex flex-col px-3 md:px-12 lg:px-24 py-16 pb-8 justify-evenly gap-4 sm:gap-8 text-start z-30">
+      <div className="text-lg sm:text-2xl lg:text-3xl">
         INTERESTED IN WORKING TOGETHER?
       </div>
       <div className="text-3xl sm:text-5xl lg:text-7xl">
@@ -20,15 +20,18 @@ export default function Footer({ setIsOpen }) {
           </button>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-end sm:justify-between">
+      <div className="flex flex-row items-end justify-between mt-6">
         MONTREAL, CA
+        <a href="#hero" className="self-center hidden sm:block">
+          BACK TO TOP
+        </a>
         <div className="flex gap-1">
           LOCAL TIME -<Time />
         </div>
-        <a href="#hero" className="self-center mt-8 sm:mt-0">
+      </div>
+      <a href="#hero" className="self-center sm:hidden">
           BACK TO TOP
         </a>
-      </div>
     </div>
   );
 }
