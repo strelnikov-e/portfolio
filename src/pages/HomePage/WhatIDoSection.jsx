@@ -11,6 +11,7 @@ import {
 import AboutCard from "../../components/AboutCard.jsx";
 import SlideIn from "../../components/utils/SlideIn.jsx";
 import Reveal from "../../components/utils/Reveal.jsx";
+import PageNavLink from "../../components/primitives/PageNavLink.jsx";
 
 const cardOneText =
   "Through initial sketch to the cloud. I talking through design implementations to transform desired functionalities to the code.";
@@ -45,7 +46,7 @@ export default function WhatIDoSection() {
           </div>
         </div>
       </SlideIn>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mb-12">
         <div className="hidden lg:block"></div>
         <AboutCard number="01" header="Make it" text={cardOneText} />
         <AboutCard number="02" header="Collaborate" text={cardTwoText} />
@@ -56,27 +57,21 @@ export default function WhatIDoSection() {
         />
       </div>
       <SlideIn delay="0.8">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-12 lg:mt-0 ">
-          <div></div>
-          <div></div>
-          <div className="col-span-2 items-end">
-            <div className="flex gap-4 justify-end flex-wrap sm:flex-nowrap ">
-              <span className="text-2xl font-extralight"></span>
-              <JavaIcon alt="Java" />
-              <SpringIcon />
-              <JavaScriptIcon />
-              <ReactIcon />
-              <SqlIcon />
-              <MongoIcon />
-              <GitIcon />
-              <AwsIcon />
-            </div>
-          </div>
+        <div className="flex gap-4 justify-end mb-12">
+          <span className="text-2xl font-extralight"></span>
+          <JavaIcon alt="Java" />
+          <SpringIcon />
+          <JavaScriptIcon />
+          <ReactIcon />
+          <SqlIcon />
+          <MongoIcon />
+          <GitIcon />
+          <AwsIcon />
         </div>
       </SlideIn>
-      <a href="#Projects" className="hover:text-accent-3 flex  text-lg">
-              PROJECTS
-            </a>
+      <a href="#Projects" className="hover:text-accent-3 flex text-lg justify-center">
+        <PageNavLink name="PROJECTS" />
+      </a>
     </section>
   );
 }

@@ -62,14 +62,14 @@ function Navbar({ switchTheme }) {
                           {item.name}
                         </a>
                       ))}
-                      <div className="relative w-6 flex justify-center items-center">
-                        <button
-                          className="bg-content-vivid hover:bg-content-vivid rounded-full p-2.5 h-2.5"
-                          onClick={switchTheme}
-                        ></button>
-                      </div>
                     </div>
                   </div>
+                </div>
+                <div className="relative w-6 flex justify-center items-center px-5">
+                  <button
+                    className="bg-content-vivid hover:bg-content-vivid rounded-full p-2.5 h-2.5"
+                    onClick={switchTheme}
+                  ></button>
                 </div>
               </div>
             </div>
@@ -86,14 +86,14 @@ function Navbar({ switchTheme }) {
                     item.href === path
                       ? "bg-content-vivid text-bkg-mate hover:text-bkg-vivid"
                       : "text-content-vivid hover:bg-content-mate hover:text-bkg-mate",
-                    "block py-2 px-8 text-6xl font-medium"
+                    "block py-2 px-8 text-5xl font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <div className="mt-10 flex justify-center">
+              <div className="mt-10 ms-8">
                 <Email />
               </div>
             </div>

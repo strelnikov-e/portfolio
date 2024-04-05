@@ -5,10 +5,10 @@ export default function About() {
   return (
     <div className="">
       <div className="about-bg min-h-screen px-6 lg:px-12 xl:px-24">
-        <div className="grid grid-cols-12 items-end md:items-center h-screen text-justify">
+        <div className="grid grid-cols-12 items-end md:items-center h-screen">
           <div className=" col-span-4 sm:col-span-6 lg:col-span-7"></div>
           <div className="col-span-8 sm:col-span-6 lg:col-span-5 text-white">
-            <div className="text-4xl mb-8 font-thin">
+            <div className="text-2xl sm:text-4xl mb-4 font-thin">
               <Reveal delay="0.4" duration="1.5">
                 I'm
               {/* </Reveal>
@@ -20,7 +20,7 @@ export default function About() {
               </Reveal>
             </div>
             <Reveal delay="1.2" duration="1.5">
-              <div className="text-xl font-light">
+              <div className="text-lg font-light py-8">
                 For almost 10 years of{" "}
                 <span className="font-semibold"> engineering</span> career I've
                 engoyed finding
