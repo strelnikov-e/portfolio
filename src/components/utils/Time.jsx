@@ -12,10 +12,12 @@ export default function Time() {
     };
   }, []);
 
+
+
   return (
     <>
       <div className="flex">
-        {date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}
+        {date.getUTCHours() < 6 ? "0" + date.getUTCHours() - 4 : date.getUTCHours() - 4}
         <div className="animate-pulse">:</div>
         {date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()}
       </div>

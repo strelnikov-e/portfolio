@@ -18,12 +18,15 @@ export default function HeroSection() {
         <div></div>
         <div className="">
           <Reveal delay="0.5" duration="0.8">
-            <div className="mb-6 text-5xl sm:text-6xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-normal text-start w-2/3">
+            <div className="mb-3 text-5xl sm:text-6xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-normal text-start w-2/3">
               EVGENY STRELNIKOV
             </div>
           </Reveal>
           <Reveal delay="0.8" duration="0.8">
-            <div className="text-2xl xl:text-3xl 2xl:text-4xl mb-20">
+          {/* <div className="text-2xl xl:text-3xl 2xl:text-4xl  font-light mb-20">
+              Software developer based in Monteal
+            </div> */}
+            <div className="text-3xl xl:text-3xl 2xl:text-4xl mb-20">
               Software developer{" "}
               <span className="font-extralight">based in</span> Monteal
             </div>
