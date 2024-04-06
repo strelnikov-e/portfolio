@@ -4,13 +4,13 @@ export default function AboutCard({ number, header, text }) {
   return (
     <div className="">
       <div className="flex flex-col gap-3">
-        <SlideIn delay="0.2">
+        <SlideIn delay="0.1">
           <div className="text-start text-4xl font-extralight">{number}</div>
         </SlideIn>
-        <SlideIn delay="0.4">
+        <SlideIn delay="0.2">
           <div className="text-start text-2xl">{header}</div>
         </SlideIn>
-        <SlideIn delay="0.6">
+        <SlideIn delay="0.3">
           <p className="text-justify">{text}</p>
         </SlideIn>
       </div>

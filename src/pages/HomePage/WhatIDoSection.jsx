@@ -31,7 +31,7 @@ export default function WhatIDoSection() {
         <div className="text-start text-4xl mb-10 lg:mb-0 ">WHAT I DO</div>
       </Reveal>
 
-      <SlideIn delay="0.25">
+      <SlideIn delay="0">
         <div className="grid lg:grid-cols-4 grid-cols-3 mb-10 lg:mb-0 ">
           <div className="hidden md:block"></div>
           <div className="col-span-3 ">
@@ -55,7 +55,7 @@ export default function WhatIDoSection() {
           text={cardThreeText}
         />
       </div>
-      <SlideIn delay="0.8">
+      <SlideIn delay="0" margin="0%">
         <div className="flex gap-4 sm:justify-end mb-12">
           <span className="text-2xl font-extralight"></span>
           <JavaIcon alt="Java" />

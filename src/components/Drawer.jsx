@@ -13,7 +13,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
       
       <section
         className={
-          "w-screen sm:w-4/5 md:w-2/3 lg:w-1/2 right-0 absolute p-4 bg-bkg-vivid h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
+          "w-screen overflow-auto sm:w-4/5 md:w-2/3 lg:w-1/2 right-0 absolute p-4 bg-bkg-vivid h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
           (isOpen ? " translate-x-0 " : " translate-x-full ")
         }
       >

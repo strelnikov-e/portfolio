@@ -75,8 +75,8 @@ function Navbar({ switchTheme }) {
             </div>
           </Reveal>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="fixed flex flex-col top-16 pt-36 pb-8 w-screen h-fit bg-bkg-mate shadow-md justify-end">
+          <Disclosure.Panel className="sm:hidden ">
+            <div className="fixed flex flex-col overflow-hidden top-16 pt-36 pb-36 w-screen h-dvh bg-bkg-mate shadow-md justify-end z-10">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

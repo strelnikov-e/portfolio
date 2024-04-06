@@ -10,7 +10,7 @@ export default function Contacts() {
 
   return (
     <div className="flex">
-      <div className="bg-bkg-mate text-content-vivid text-content h-dvh w-screen flex flex-col px-6 sm:px-12 md:px-24 pt-16 pb-8 gap-4 text-start justify-between">
+      <div className="bg-bkg-mate text-content-vivid text-content h-lvh w-screen flex flex-col px-6 sm:px-12 md:px-24 pt-16 pb-8 gap-4 text-start justify-between">
         <div></div>
         <Reveal>
           <div>
