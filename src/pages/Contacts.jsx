@@ -28,7 +28,7 @@ export default function Contacts() {
             </div>
           </div>
         </Reveal>
-        <SlideIn margin="0%" delay="0.5" duration="0.5">
+        <SlideIn margin="10%" delay="0.5" duration="0.5">
         <div className="flex flex-col sm:flex-row text-md sm:text-lg font-medium justify-between">
           <div className="flex gap-2 ">
             <div>LOCAL TIME -</div>

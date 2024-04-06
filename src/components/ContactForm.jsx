@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 export default function ContactForm() {
   const form = useRef();
   const [isMessageSent, setIsMessageSent] = useState(false);
-  const [isError, setIsisError] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,13 +20,23 @@ export default function ContactForm() {
         },
         (error) => {
           console.log("FAILED...", error.text);
-          setIsisError(true);
+          setIsError(true);
         }
       );
   };
 
   return (
     <>
+      {isError && (
+        <div className="text-lg mb-4 font-bold text-red-500 opacity-80 bg-content-vivid px-6 py-1 rounded-full w-fit">
+          Something went wrong. Please try again later.
+        </div>
+      )}
+      {isMessageSent && (
+        <div className="text-lg mb-4 font-bold text-bkg-mate opacity-80 bg-content-mate px-6 py-1 rounded-full w-fit">
+          Thank you for the message. I will reply shortly.
+        </div>
+      )}
       <form ref={form} onSubmit={sendEmail} className="mb-6">
         <div className="mb-6">
           <label htmlFor="user_name" className="block mb-2 text-lg font-light">
@@ -83,21 +93,17 @@ export default function ContactForm() {
           key="submit"
           type="submit"
           value="Send"
-          disabled={isMessageSent || !isError}
+          disabled={isMessageSent || isError}
           className={`block rounded-sm py-2.5 w-fit xl:w-1/4 text-xl font-normal border-2 border-content-vivid transition-colors duration-500 ${
             isMessageSent
-              ? "bg-accent-2 text-bkg-mate hover:bg-content-mate hover:text-bkg-vivid"
+              ? "bg-accent-2 text-accent-1 hover:bg-content-mate hover:text-bkg-vivid opacity-70"
               : isError
-              ? "hover:bg-bkg-vivd hover:text-content-mate"
+              ? "hover:bg-bkg-vivd hover:text-content-mate opacity-40"
               : "hover:bg-content-vivid hover:text-bkg-mate"
           }`}
         >
-          {isMessageSent ? "SUCCESS" : "SUBMIT"}
+          {isMessageSent ? "SUCCESS!" : "SUBMIT"}
         </button>
-        <div>
-          {isError === null &&
-            "Some isError has occured. Please try again letter or sent you message directly on my email."}
-        </div>
       </form>
     </>
   );

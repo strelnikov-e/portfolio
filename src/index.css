@@ -17,8 +17,8 @@
   }
   @media (prefers-color-scheme: dark) {
   :root {
-    --color-bkg-mate: 24deg 0% 16%;;
-    --color-bkg-vivid: 30deg 0% 18%;
+    --color-bkg-mate: 30deg 0% 17%;
+    --color-bkg-vivid: 24deg 0% 14%;
     --color-content-mate: 60deg 5% 90%;
     --color-content-vivid: 60deg 5% 92%;
     --color-accent-1: 60deg 5% 90%;
@@ -27,8 +27,8 @@
   }
 }
   :root[data-theme="dark"] {
-    --color-bkg-mate: 24deg 0% 16%;;
-    --color-bkg-vivid: 30deg 0% 18%;
+    --color-bkg-mate: 30deg 0% 17%;
+    --color-bkg-vivid: 24deg 0% 14%;
     --color-content-mate: 60deg 5% 90%;
     --color-content-vivid: 60deg 5% 92%;
     --color-accent-1: 60deg 5% 90%;
