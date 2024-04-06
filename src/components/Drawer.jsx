@@ -18,9 +18,9 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
         }
       >
         <div className="flex justify-end">
-        <button onClick={() => setIsOpen(false)} className="bg-bkg-vivid"><XMarkIcon width={40}/></button>
+        <button onClick={() => setIsOpen(false)} className="bg-bkg-vivid mb-8"><XMarkIcon width={40}/></button>
         </div>
-        <article className="px-6 flex flex-col justify-center overflow-y-scroll h-full">
+        <article className="px-6 flex flex-col overflow-y-scroll h-full">
           <div className="font-light text-4xl sm:text-5xl mb-10">Send me an email</div>
           {children}
         </article>

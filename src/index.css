@@ -38,44 +38,6 @@
   
 }
 
-/* @layer base {
-  html {
-    font-family: "Helvetica Neue", system-ui, sans-serif;
-  }
-  :root {
-    --color-bkg-mate: 60deg 9% 98%;
-    --color-bkg-vivid: 60deg 5% 96%;
-    --color-content-mate: 30deg 6% 25%;
-    --color-content-vivid: 24deg 10% 10%;
-    --color-accent-1: 60deg 5% 90%;
-    --color-accent-2: 161deg 35% 25%;
-    --color-accent-3: 24deg 2% 35%;
-  }
-  @media (prefers-color-scheme: dark) {
-  :root {
-    --color-bkg-mate: 24deg 0% 16%;;
-    --color-bkg-vivid: 30deg 0% 18%;
-    --color-content-mate: 60deg 5% 90%;
-    --color-content-vivid: 60deg 5% 92%;
-    --color-accent-1: 60deg 5% 90%;
-    --color-accent-2: 161deg 35% 25%;
-    --color-accent-3: 24deg 2% 82%;
-  }
-}
-  :root[data-theme="dark"] {
-    --color-bkg-mate: 24deg 0% 16%;;
-    --color-bkg-vivid: 30deg 0% 18%;
-    --color-content-mate: 60deg 5% 90%;
-    --color-content-vivid: 60deg 5% 92%;
-    --color-accent-1: 60deg 5% 90%;
-    --color-accent-2: 161deg 30% 25%;
-    --color-accent-3: 24deg 2% 82%;
-  }
-  
-} */
-
-
-
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Firefox */
   .no-scrollbar::-webkit-scrollbar {
@@ -125,16 +87,6 @@ a:hover {
   color: #333;
 }
 
-.hero-bg {
-  /* background: -webkit-radial-gradient(90% bottom,white,hsl(24deg 0% 16%),hsl(24deg 0% 16%));
-  background: radial-gradient(at 90% bottom,white,hsl(24deg 0% 16%),hsl(24deg 0% 16%)); */
-  background: url("assets/images/splash.svg") no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 70%;
-  background-position: 0% 100%;
-}
 
 
 button {

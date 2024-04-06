@@ -20,13 +20,13 @@ function Navbar({ switchTheme }) {
   return (
     <Disclosure
       as="nav"
-      className="bg-bkg-mate text-content-vivid shadow-sm sm:shadow-none sm:bg-transparent sm:backdrop-blur-sm border-b border-neutral-600 border-opacity-20 w-dvw h-16 fixed top-0 text-md z-10"
+      className="bg-bkg-mate text-content-vivid shadow-sm sm:shadow-none sm:bg-transparent sm:backdrop-blur-sm border-b border-neutral-600 border-opacity-20 w-dvw h-20 fixed top-0 text-md z-10 items-center"
     >
       {({ open }) => (
         <>
           <Reveal delay="0" duration="0.2">
-            <div className="max-h-12 px-2 sm:px-12 lg:px-24 fade-in-fast-animation">
-              <div className="relative flex h-16 items-center justify-between">
+            <div className=" relative max-h-20 px-2 sm:px-12 lg:px-24 fade-in-fast-animation">
+              <div className="relative flex h-20 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset hover:bg-content-mate hover:text-bkg-mate focus:ring-bkg-mate">
@@ -41,7 +41,7 @@ function Navbar({ switchTheme }) {
                 </div>
                 <div className="flex flex-1 justify-center sm:items-center sm:justify-between text-lg">
                   <a href="/">
-                    <div className="flex flex-shrink-0 font-medium">
+                    <div className="flex flex-shrink-0 font-medium ms-10 sm:ms-0">
                       STRELNIKOV.
                     </div>
                   </a>
@@ -65,12 +65,12 @@ function Navbar({ switchTheme }) {
                     </div>
                   </div>
                 </div>
-                <div className="relative w-6 flex justify-center items-center px-5">
-                  <button
-                    className="bg-content-vivid hover:bg-content-vivid rounded-full p-2.5 h-2.5"
-                    onClick={switchTheme}
-                  ></button>
-                </div>
+              <div className="flex px-3">
+                <button
+                  className="bg-content-mate hover:bg-content-vivid rounded-full p-2.5 h-2.5"
+                  onClick={switchTheme}
+                ></button>
+              </div>
               </div>
             </div>
           </Reveal>

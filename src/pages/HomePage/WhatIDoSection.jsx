@@ -13,7 +13,7 @@ import SlideIn from "../../components/utils/SlideIn.jsx";
 import Reveal from "../../components/utils/Reveal.jsx";
 
 const cardOneText =
-  "Through initial sketch to the cloud. I talking through design implementations to transform desired functionalities to the code.";
+  "Through initial sketch to the cloud. I'm talking through design implementations to transform desired functionalities to the code.";
 const cardTwoText =
   "Good application is not created in a vacuum but rather in a shared space. It should be facilitated and iterated upon as a team.";
 const cardThreeText =
@@ -25,7 +25,7 @@ export default function WhatIDoSection() {
   return (
     <section
       id="WhatIDo"
-      className="relative bg-bkg-mate min-h-screen flex flex-col px-6 md:px-12 lg:px-24 py-8 justify-between"
+      className="relative bg-bkg-mate min-h-screen flex flex-col px-6 pt-20 md:px-12 lg:px-24 py-8 justify-around"
     >
       <Reveal>
         <div className="text-start text-4xl mb-10 lg:mb-0 ">WHAT I DO</div>

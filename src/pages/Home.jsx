@@ -6,12 +6,11 @@ import HeroSection from "./HomePage/HeroSection";
 import WhatIDoSection from "./HomePage/WhatIDoSection";
 import ProjectsSection from "./HomePage/ProjectsSection";
 
-export default function Home() {
+export default function Home( ) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="absolute top-0 w-screen bg-bkg-mate text-content-vivid">
-      <div className="scroll-watcher"></div>
       <HeroSection />
       <WhatIDoSection />
       <div className="relative">
