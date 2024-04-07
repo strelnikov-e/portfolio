@@ -22,7 +22,7 @@ export default function HeroSection() {
               EVGENY STRELNIKOV
             </div>
           </Reveal>
-          <Reveal delay="0.8" duration="0.8">
+          <Reveal delay="1.1" duration="0.8">
           {/* <div className="text-2xl xl:text-3xl 2xl:text-4xl  font-light mb-20">
               Software developer based in Monteal
             </div> */}
@@ -50,7 +50,7 @@ export default function HeroSection() {
       </div>
       <div className="col-span-12 self-end">
         <SlideIn delay="1.2" margin="0%" duration="0.5">
-          <div className=" relative flex flex-col sm:flex-row gap-4 font-normal md:text-lg justify-between ">
+          <div className=" relative flex flex-col sm:flex-row gap-4 font-normal md:text-lg justify-between">
             <a href="mailto:evstrelnikov@gmail.com">
               <div className="flex">
                 <Email />

@@ -25,6 +25,9 @@ export default {
           mate: "hsl(var(--color-content-mate) / <alpha-value>)",
           vivid: "hsl(var(--color-content-vivid) / <alpha-value>)",
         },
+        error: "hsl(var(--color-error) / <alpha-value>)",
+        highlight: "hsl(var(--color-highlight) / <alpha-value>)",
+        
       },
       keyframes: {
         slidein: {

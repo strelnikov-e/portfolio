@@ -1,4 +1,5 @@
 import Reveal from "../components/utils/Reveal";
+import SlideIn from "../components/utils/SlideIn";
 
 
 export default function About() {
@@ -9,13 +10,13 @@ export default function About() {
           <div className=" col-span-4 sm:col-span-6 lg:col-span-7"></div>
           <div className="col-span-8 sm:col-span-6 lg:col-span-5 text-white">
             <div className="text-2xl sm:text-4xl mb-4 font-thin">
-              <Reveal delay="0.4" duration="1.5">
+              <SlideIn delay="0.4" duration="0.5">
                 I'm
                 <span className="font-semibold"> web developer </span>
                 based in snowy Montreal, Canada.
-              </Reveal>
+              </SlideIn>
             </div>
-            <Reveal delay="1.2" duration="1.5">
+            <SlideIn delay="0.8" duration="0.5">
               <div className="text-lg font-light py-8">
                 For almost 10 years of{" "}
                 <span className="font-semibold"> engineering</span> career I've
@@ -33,7 +34,7 @@ export default function About() {
                 </span>{" "}
                 to my work.
               </div>
-            </Reveal>
+            </SlideIn>
           </div>
         </div>
       </div>

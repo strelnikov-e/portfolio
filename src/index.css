@@ -14,6 +14,8 @@
     --color-accent-1: 60deg 5% 90%;
     --color-accent-2: 161deg 35% 25%;
     --color-accent-3: 24deg 2% 35%;
+    --color-error: 24deg 2% 35%;
+    --color-highlight: 161deg 40% 35%;
   }
   @media (prefers-color-scheme: dark) {
   :root {
@@ -24,6 +26,8 @@
     --color-accent-1: 60deg 5% 90%;
     --color-accent-2: 161deg 35% 25%;
     --color-accent-3: 24deg 2% 82%;
+    --color-error: 24deg 2% 35%;
+    --color-highlight: 161deg 50% 65%;
   }
 }
   :root[data-theme="dark"] {
@@ -32,8 +36,10 @@
     --color-content-mate: 60deg 5% 90%;
     --color-content-vivid: 60deg 5% 92%;
     --color-accent-1: 60deg 5% 90%;
-    --color-accent-2: 161deg 30% 25%;
+    --color-accent-2: 161deg 30% 30%;
     --color-accent-3: 24deg 2% 82%;
+    --color-error: 24deg 2% 35%;
+    --color-highlight: 161deg 50% 65%;
   }
   
 }

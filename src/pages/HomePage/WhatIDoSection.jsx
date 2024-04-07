@@ -19,7 +19,6 @@ const cardTwoText =
 const cardThreeText =
   "Everything I create is a subject to change and experimentation. Not everything will work, but it’s worth trying and learning from what doesn’t.";
 
-const sections = ["header", "one", "two", "three"];
 
 export default function WhatIDoSection() {
   return (
@@ -58,6 +57,8 @@ export default function WhatIDoSection() {
       <SlideIn delay="0" margin="0%">
         <div className="flex gap-4 sm:justify-end mb-12">
           <span className="text-2xl font-extralight"></span>
+  
+
           <JavaIcon alt="Java" />
           <SpringIcon />
           <JavaScriptIcon />
