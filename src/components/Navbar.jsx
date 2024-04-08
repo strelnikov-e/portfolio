@@ -24,7 +24,7 @@ function Navbar({ switchTheme }) {
     >
       {({ open }) => (
         <>
-          <Reveal delay="0" duration="0.2">
+          <Reveal delay="0" duration="0.3">
             <div className=" relative max-h-20 px-2 sm:px-12 lg:px-24 fade-in-fast-animation">
               <div className="relative flex h-20 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

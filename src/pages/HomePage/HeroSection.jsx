@@ -17,7 +17,7 @@ export default function HeroSection() {
         {/* <HeroBkg className="bg-green-500 fill-green-600 absolute top-0"></HeroBkg> */}
         <div></div>
         <div className="">
-          <Reveal delay="0.5" duration="0.8">
+          <Reveal delay="0.3" duration="0.6">
             <div className="mb-3 text-5xl sm:text-6xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-normal text-start w-2/3">
               EVGENY STRELNIKOV
             </div>
@@ -36,7 +36,7 @@ export default function HeroSection() {
 
       <div className="col-span-1 sm:self-center self-start justify-self-end py-8 scale-75 sm:scale-100">
         <div className="flex md:flex-col justify-center mb-6">
-          <Reveal margin="0%" delay="1.2" duration="1.0">
+          <Reveal margin="0%" delay="1.5" duration="1.0">
             <a href="https://github.com/strelnikov-e" className="me-4">
               <GitHubIcon size={socialIconSize} />
             </a>
@@ -49,7 +49,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="col-span-12 self-end">
-        <SlideIn delay="1.2" margin="0%" duration="0.5">
+        <SlideIn delay="1.5" margin="0%" duration="1.0">
           <div className=" relative flex flex-col sm:flex-row gap-4 font-normal md:text-lg justify-between">
             <a href="mailto:evstrelnikov@gmail.com">
               <div className="flex">

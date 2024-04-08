@@ -3,88 +3,93 @@ import {
   DockerIcon,
   GitIcon,
   JavaIcon,
+  JavaScriptIcon,
   MongoIcon,
   SpringIcon,
   SqlIcon,
+  ReactIcon
 } from "./Icons";
 
-export function Java() {
+const className = "flex font-medium align-baseline text-center gap-1 px-3 py-1 bg-highlight text-bkg-mate";
+
+export function JavaIconText() {
+
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <JavaIcon size="20" className="fill-bkg-vivid" />
       Java
-      <JavaIcon />
     </div>
   );
 }
 
-export function Spring() {
+export function SpringIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <SpringIcon size="20" className="fill-bkg-vivid" />
       Spring
-      <SpringIcon />
     </div>
   );
 }
 
-export function JavaScript() {
+export function JSIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <JavaScriptIcon size="20" className="fill-bkg-vivid"/>
       JavaScript
-      <JavaScript />
     </div>
   );
 }
 
-export function ReactTech() {
+export function ReactIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <ReactIcon size="20" className="fill-bkg-vivid" />
       React
-      <React />
     </div>
   );
 }
 
-export function Git() {
+export function GitIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <GitIcon size="20" className="fill-bkg-vivid" />
       Git
-      <GitIcon />
     </div>
   );
 }
 
-export function SQL() {
+export function SQLIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <SqlIcon size="20" className="fill-bkg-vivid" />
       SQL
-      <SqlIcon />
     </div>
   );
 }
 
-export function Mongo() {
+export function MongoIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <MongoIcon size="20" className="fill-bkg-vivid" />
       MongoDB
-      <MongoIcon />
     </div>
   );
 }
 
-export function AWS() {
+export function AWSIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <AwsIcon size="20" className="fill-bkg-vivid" />
       AWS
-      <AwsIcon />
     </div>
   );
 }
 
-export function Docker() {
+export function DockerIconText() {
   return (
-    <div className=" font-medium align-baseline text-center">
+    <div className={className}>
+      <DockerIcon size="20" className="fill-bkg-vivid" />
       Docker
-      <DockerIcon />
     </div>
   );
 }
