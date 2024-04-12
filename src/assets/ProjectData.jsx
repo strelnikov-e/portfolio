@@ -7,7 +7,7 @@ import KDTreeImg from "../assets/images/kd-tree-img.png";
 
 export const issueTracker = {
   name: "Issue Tracker",
-  href: "https://issuetracker-client-production.up.railway.app/issues",
+  href: "https://issuetracker-client-production.up.railway.app",
   technologies: ["Java", "Spring Boot", "JavaScript", "React"],
   image: IssueTrackerImg,
   shortDescription:
