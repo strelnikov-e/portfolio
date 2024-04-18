@@ -18,9 +18,9 @@ export default function About() {
             </div>
             <SlideIn delay="0.8" duration="0.5">
               <div className="text-lg font-light py-8">
-                For almost 10 years of{" "}
+                For almost 10 years of diverse{" "}
                 <span className="font-semibold"> engineering</span> career I've
-                engoyed finding
+                enjoyed finding
                 <span className="font-semibold">
                   {" "}
                   simple and elegant solutions
